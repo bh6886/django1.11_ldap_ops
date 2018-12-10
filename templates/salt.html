@@ -1,0 +1,136 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{{title}}</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+iframe {width:500px;height:90px;}
+ body{
+    /*background: blue;*/
+       background-repeat: no-repeat;
+       background-size:100% 100%;
+       background-attachment: fixed;
+       background-image:url('http://dl.elevensky.net/imgf/apk3/M01/12/4D/wKhklFuDzuuANrBpAAGofC-CYVg408.jpg')
+
+   }
+   .STYLE9 {
+           color: #FFFFFF;
+           font-weight: bold;
+           }
+   .STYLE8{
+      color: red;
+    }
+   }
+    .anniu{
+       width: 120px;
+      margin-right: 5px;
+    }
+
+</style>
+
+<body>
+<div class="container-fluid">
+        <div class="row-fluid">
+        <div class="span12">
+            <h1 align="center" class="STYLE9">输入要执行的命令 </h1>
+        <div class="tabbable" id="tabs-320427">
+            <ul class="nav nav-tabs">
+            <li class="active">
+
+
+<h4><span class="STYLE9">salt信息</span></h4>
+
+<br \>
+<br \>
+
+<form method="post" id="myFrom" onSubmit="return register();" >
+     <input type="text" class="form-control" placeholder="填写版本信息" name="a1" style="width: 800px;"><br><br>
+
+        <div  class="checkbox STYLE9">
+            <label>
+                <input id='f1' type="checkbox" value="192.168.169.18" name='b1'>
+                192.168.169.18
+            </label>
+        </div>
+        <div  class="checkbox STYLE9">    
+            <label>
+                <input id='f2' type="checkbox" value="192.168.169.19" name='b1'>
+                192.168.169.19
+            </label>
+        </div>
+        <div  class="checkbox STYLE9">
+            <label>
+                <input id='f2' type="checkbox" value="192.168.174.53" name='b1'>
+                192.168.174.53
+            </label>
+        </div>
+
+     <button class="btn btn-primary anniu"  type="button" onclick="register()" class="submit" style="width: 120px;">提交</button>
+</form>
+<br \>
+<br \>
+
+<span class="STYLE9">
+{% for i in ss %}
+{{i}}<br>
+{% endfor %}
+</span>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function register(){
+
+
+(function() {
+        var btn = $(".btn");
+        btn.on("click", function(e) {
+        var thisBtn = $(this);
+        thisBtn.addClass("btn-success").data("stat", "true");
+        });
+        })()
+function toSubmit(){
+    document.getElementById('myForm').submit();//提交
+}
+function toReset(){
+    document.getElementById('myForm').reset();//重置
+
+}
+if(confirm("确认信息无误，然后提交")){
+      document.getElementById("myFrom").submit();  
+    }
+
+
+function isnull(objValue){
+  return (null == objValue || objValue);
+  }
+}
+</script>
+
+
+
+    <div align="left">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+    <address>
+    <strong>博涵Dream.S</strong><br />
+    bh6886@qq.com<br />
+    <abbr title="Phone">P:</abbr> 13372542902
+    </address>
+    </div>
+
